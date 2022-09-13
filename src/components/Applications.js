@@ -1,7 +1,9 @@
 export default function Applications() {
   return (
     <>
-    <h2>Applications</h2>
+      <div className="application-item">
+        <img src="" alt="" />
+      </div>
     </>
   );
 }

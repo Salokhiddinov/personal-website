@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=VT323&display=swap");
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 body {
   margin: 0;
@@ -9,10 +9,15 @@ body {
   font-family: "VT323", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #01807E;
+  background-color: #01807e;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.nav-window{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }

@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import startButton from "../images/start-button.png";
 import "../styles/Navigation.css";
 export default function Navigation() {
   const [date, setDate] = useState(new Date());
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
 
-  useEffect(() => {
+  setInterval(() => {
     const currentDate = new Date();
     const hours = currentDate.getHours();
     const minutes = currentDate.getMinutes();
@@ -15,16 +16,28 @@ export default function Navigation() {
     setHours(hours);
     setMinutes(minutes);
     setDate(`${day}/${month}/${year}`);
-  }, []);
+  }, 1000);
+
   return (
-    <nav className="navigation">
-      <span className="heading">SALAKHIDDINOV</span>
-      <div>
-        <span className="time">{`${date}`} |</span>
-        <span className="time">{`${hours}:${
-          minutes.toString().length === 1 ? "0" : ""
-        }${minutes}`}</span>
-      </div>
-    </nav>
+    <>
+      <nav className="navigation">
+        <div className="start-button-wrapper">
+          <div className="start-button">
+            <img src={startButton} alt="Start" />
+            <span>Start</span>
+          </div>
+        </div>
+        <div>
+          <div className="date-wrapper">
+            <div className="date">
+              <span className="time">{`${date}`}</span>
+              <span className="time">{`${hours}:${
+                minutes.toString().length === 1 ? "0" : ""
+              }${minutes}`}</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
