@@ -1,0 +1,30 @@
+.navigation {
+  height: 35px;
+  background-color: #a5a5a5;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid rgba(39, 39, 39, 0.67);
+}
+.navigation .heading {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 0 10px;
+  line-height: 35px;
+  text-align: center;
+}
+.navigation .heading :hover {
+  cursor: pointer;
+  border: 2px solid #a5a5a5;
+}
+.navigation .time {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 10px 0 0;
+  line-height: 35px;
+  text-align: center;
+}/*# sourceMappingURL=Navigation.css.map */
