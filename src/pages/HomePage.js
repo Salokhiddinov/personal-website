@@ -5,14 +5,18 @@ import Navigation from "../components/Navigation";
 import Applications from "../components/Applications";
 import About from "../components/About";
 import Contacts from "../components/Contacts";
+import Projects from "../components/Projects";
 
 export default function HomePage() {
   const [navWinOpen, setNavWinOpen] = useState(false);
   const [about, setAbout] = useState(false);
   const [contacts, setContacts] = useState(false);
+  const [projects, setProjects] = useState(false);
+
   function closeAllWindows() {
     setAbout(false);
     setContacts(false);
+    setProjects(false);
   }
   function toggleNavWin() {
     setNavWinOpen(!navWinOpen);
@@ -33,6 +37,14 @@ export default function HomePage() {
     closeAllWindows();
     setContacts(false);
   }
+  function openProjects() {
+    closeAllWindows();
+    setProjects(true);
+  }
+  function closeProjects() {
+    closeAllWindows();
+    setProjects(false);
+  }
   return (
     <div className="home-container">
       <Navigation toggleWin={toggleNavWin} />
@@ -41,7 +53,14 @@ export default function HomePage() {
       {contacts && (
         <Contacts toggle={openContacts} closeContacts={closeContacts} />
       )}
-      <Applications openAbout={openAbout} openContacts={openContacts} />
+      {projects && (
+        <Projects toggle={openProjects} closeProjects={closeProjects} />
+      )}
+      <Applications
+        openAbout={openAbout}
+        openContacts={openContacts}
+        openProjects={openProjects}
+      />
     </div>
   );
 }

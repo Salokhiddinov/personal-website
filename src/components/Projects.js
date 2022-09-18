@@ -1,14 +1,12 @@
 import Window from "./Window";
-import avatar from "../images/avatar.jpg";
-export default function About(props) {
-  function closeAbout() {
-    props.closeAbout();
+export default function Projects(props) {
+  function closeProjects() {
+    props.closeProjects();
   }
   return (
     <>
-      <Window close={closeAbout} title="About">
+      <Window close={closeProjects} title="Projects">
         <div className="photo-container">
-          <img src={avatar} alt="avatar" className="avatar" />
           <div className="photo-description">
             <h2>
               Nomonjon
