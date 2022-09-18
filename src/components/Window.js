@@ -9,7 +9,7 @@ export default function Window(props) {
       <div className="base-window">
         <div className="window-header">
           <div className="window-header-title">
-            <span>About</span>
+            <span>{props.title}</span>
           </div>
           <div className="window-header-controls">
             <button className="window-header-control" onClick={closeWindow}>

@@ -3,12 +3,13 @@
 }
 .applications .application-item {
   display: flex;
+  margin-bottom: 1rem;
   flex-direction: column;
-  width: 60px;
+  width: 70px;
 }
 .applications .application-item img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin: 0 auto;
 }
 .applications .application-item .application-title {

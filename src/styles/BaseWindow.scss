@@ -1,7 +1,7 @@
 .base-window {
   background-color: silver;
   position: absolute;
-  width: 60%;
+  width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -67,9 +67,44 @@
         font-size: 3rem;
       }
     }
+    .window-title {
+      padding: 0;
+    }
+    .contacts {
+      padding: 10px;
+      height: 50vh;
+      
+
+      background-color: #dfdfdf;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+      .contacts-list{
+        width: 100%;
+        display: flex;
+      justify-content: flex-start;
+      }
+      .contact-item {
+        width: 60px;
+        text-align: center;
+
+        .contact-icon {
+          height: 40px;
+          width: 40px;
+          margin: auto;
+        }
+        .contact-title {
+          margin: auto;
+        }
+      }
+    }
   }
 }
-
+.contact-item:hover {
+  background-color: #9696968c;
+}
 @media screen and (max-width: 600px) {
   .base-window {
     width: 90%;

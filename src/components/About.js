@@ -2,7 +2,7 @@ import Window from "./Window";
 import avatar from "../images/avatar.jpg";
 export default function About(props) {
   function closeAbout() {
-    props.toggleAbout();
+    props.closeAbout();
   }
   return (
     <>

@@ -1,17 +1,25 @@
 import "../styles/Applications.css";
 import about from "../images/about.png";
+import contacts from "../images/contacts.png";
+
 export default function Applications(props) {
   function openAbout() {
     props.openAbout();
   }
+  function openContacts() {
+    props.openContacts();
+  }
   return (
     <>
       <div className="applications">
-        <div className="application-item" onDoubleClick={openAbout}>
+        <div className="application-item" onClick={openAbout}>
           <img src={about} alt="about" className="applicaion-icon" />
           <span className="application-title">About</span>
         </div>
-        
+        <div className="application-item" onClick={openContacts}>
+          <img src={contacts} alt="contacts" className="applicaion-icon" />
+          <span className="application-title">Contacts</span>
+        </div>
       </div>
     </>
   );

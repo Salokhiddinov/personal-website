@@ -1,7 +1,7 @@
 .base-window {
   background-color: silver;
   position: absolute;
-  width: 60%;
+  width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -68,6 +68,40 @@
 }
 .base-window .window-content .photo-container .photo-emoji {
   font-size: 3rem;
+}
+.base-window .window-content .window-title {
+  padding: 0;
+}
+.base-window .window-content .contacts {
+  padding: 10px;
+  height: 50vh;
+  background-color: #dfdfdf;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+}
+.base-window .window-content .contacts .contacts-list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.base-window .window-content .contacts .contact-item {
+  width: 60px;
+  text-align: center;
+}
+.base-window .window-content .contacts .contact-item .contact-icon {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+.base-window .window-content .contacts .contact-item .contact-title {
+  margin: auto;
+}
+
+.contact-item:hover {
+  background-color: rgba(150, 150, 150, 0.5490196078);
 }
 
 @media screen and (max-width: 600px) {

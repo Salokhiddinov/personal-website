@@ -3,7 +3,7 @@ import startButton from "../images/start-button.png";
 import "../styles/Navigation.css";
 
 export default function Navigation(props) {
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState("00");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
 
@@ -35,7 +35,7 @@ export default function Navigation(props) {
         <div>
           <div className="date-wrapper">
             <div className="date">
-              <span className="time">{`${date}`}</span>
+              <span className="time">{date}</span>
               <span className="time">{`${hours}:${
                 minutes.toString().length === 1 ? "0" : ""
               }${minutes}`}</span>
