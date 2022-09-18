@@ -11,6 +11,9 @@
   border-right: 2px solid gray;
   border-bottom: 2px solid gray;
 }
+.base-window p {
+  font-size: 1.9rem;
+}
 .base-window .window-header {
   display: flex;
   justify-content: space-between;
@@ -74,13 +77,16 @@
 }
 .base-window .window-content .contacts {
   padding: 10px;
-  height: 50vh;
+  height: 40vh;
   background-color: #dfdfdf;
   border-top: 2px solid gray;
   border-left: 2px solid gray;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+}
+.base-window .window-content .contacts a {
+  color: blue;
 }
 .base-window .window-content .contacts .contacts-list {
   width: 100%;
@@ -98,6 +104,41 @@
 }
 .base-window .window-content .contacts .contact-item .contact-title {
   margin: auto;
+}
+
+.contact-description {
+  width: 100%;
+  display: flex;
+  height: 10rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+.contact-description img {
+  height: 50px;
+  margin-right: 1rem;
+}
+.contact-description p {
+  font-size: 1.9rem;
+}
+
+.contact-description-disabled {
+  width: 100%;
+  display: flex;
+  height: 10rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+.contact-description-disabled p {
+  font-size: 1.9rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact-item:hover {
