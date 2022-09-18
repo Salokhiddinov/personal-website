@@ -1,0 +1,22 @@
+.applications {
+  margin: 1rem 0 0 1rem;
+}
+.applications .application-item {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+.applications .application-item img {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+.applications .application-item .application-title {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.application-item:hover {
+  background-color: rgba(245, 245, 245, 0.3333333333);
+}/*# sourceMappingURL=Applications.css.map */

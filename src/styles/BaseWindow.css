@@ -1,6 +1,7 @@
 .base-window {
   background-color: silver;
   position: absolute;
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,5 +50,97 @@
 }
 .base-window .window-content {
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+.base-window .window-content .photo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.base-window .window-content .photo-container h2 {
+  margin: 0;
+}
+.base-window .window-content .photo-container img {
+  height: 100px;
+  margin-right: 10px;
+}
+.base-window .window-content .photo-container .photo-emoji {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .base-window {
+    width: 90%;
+  }
+  .base-window .window-header .window-header-title {
+    font-size: 1.5rem;
+  }
+  .base-window .window-header .window-header-control {
+    height: 15px;
+    width: 15px;
+    padding: 2px 4px 0 4px;
+  }
+  .base-window .window-header .window-header-control img {
+    height: 8px;
+  }
+  .base-window .window-content {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .base-window .window-content .photo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .base-window .window-content .photo-container h2 {
+    margin: 0;
+  }
+  .base-window .window-content .photo-container img {
+    height: 90px;
+    margin-right: 10px;
+  }
+  .base-window .window-content .photo-container .photo-emoji {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .base-window {
+    width: 80%;
+  }
+  .base-window .window-header .window-header-title {
+    font-size: 1.5rem;
+  }
+  .base-window .window-header .window-header-control {
+    height: 15px;
+    width: 15px;
+    padding: 2px 4px 0 4px;
+  }
+  .base-window .window-header .window-header-control img {
+    height: 8px;
+  }
+  .base-window .window-content {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .base-window .window-content .photo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .base-window .window-content .photo-container h2 {
+    margin: 0;
+  }
+  .base-window .window-content .photo-container img {
+    height: 90px;
+    margin-right: 10px;
+  }
+  .base-window .window-content .photo-container .photo-emoji {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=BaseWindow.css.map */

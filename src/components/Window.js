@@ -1,6 +1,9 @@
 import "../styles/BaseWindow.css";
 
 export default function Window(props) {
+  function closeWindow() {
+    props.close();
+  }
   return (
     <>
       <div className="base-window">
@@ -9,7 +12,9 @@ export default function Window(props) {
             <span>About</span>
           </div>
           <div className="window-header-controls">
-            <button className="window-header-control">{""}</button>
+            <button className="window-header-control" onClick={closeWindow}>
+              {""}
+            </button>
           </div>
         </div>
         <div className="window-content">{props.children}</div>
