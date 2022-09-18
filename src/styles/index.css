@@ -16,8 +16,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.nav-window{
-    position: fixed;
-    bottom: 0;
-    left: 0;
+/* .nav-window {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+} */
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import startButton from "../images/start-button.png";
 import "../styles/Navigation.css";
-export default function Navigation() {
-  const [date, setDate] = useState(new Date());
+
+export default function Navigation(props) {
+  const [date, setDate] = useState("");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
 
@@ -18,10 +19,14 @@ export default function Navigation() {
     setDate(`${day}/${month}/${year}`);
   }, 1000);
 
+  function toggleWindow() {
+    props.toggleWin();
+  }
+
   return (
     <>
       <nav className="navigation">
-        <div className="start-button-wrapper">
+        <div className="start-button-wrapper" onClick={toggleWindow}>
           <div className="start-button">
             <img src={startButton} alt="Start" />
             <span>Start</span>

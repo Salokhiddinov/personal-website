@@ -1,5 +1,9 @@
 import "../styles/NavWindow.css";
 export default function Window(props) {
+  function closeWindow() {
+    props.closeWin();
+  }
+
   return (
     <div className="window">
       <div className="window-header">
@@ -7,11 +11,13 @@ export default function Window(props) {
           <span>Start</span>
         </div>
         <div className="window-header-controls">
-          <button className="window-header-control">{""}</button>
+          <button className="window-header-control" onClick={closeWindow}>
+            {""}
+          </button>
         </div>
       </div>
       <div className="window-body">
-        <p>by Nomonjon Salakhiddinov</p>
+        <h3>by Nomonjon Salakhiddinov</h3>
         <p>with love ❤️</p>
       </div>
     </div>
