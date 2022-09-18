@@ -91,6 +91,7 @@
 .base-window .window-content .contacts .contacts-list {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-start;
 }
 .base-window .window-content .contacts .contact-item {
