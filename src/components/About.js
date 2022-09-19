@@ -20,10 +20,15 @@ export default function About(props) {
           </div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-          similique molestiae, perspiciatis dolores sit mollitia, minima
-          sapiente quasi maiores cum eos repellendus natus ut maxime error illo
-          quisquam obcaecati id!
+          Motivated web-developer, creative designer, hard-working guy with good
+          sense of humour. Thats all about me🙃
+          <br />
+          <br />
+          I'm a 19 year old student of Westminset International University in
+          Tashkent. There my major is Business Information Systems. I've been
+          mastering my programming & graphic design skills for past 2 years and
+          got to a reasonable level.
+          <br />
         </p>
       </Window>
     </>

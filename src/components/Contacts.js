@@ -6,6 +6,7 @@ import gmail from "../images/gmail-icon.png";
 import telegram from "../images/telegram-icon.png";
 import twitter from "../images/twitter-icon.png";
 import instagram from "../images/instagram-icon.png";
+import phone from "../images/phone-icon.png";
 
 export default function Contacts(props) {
   const [activeItem, setActiveItem] = useState("");
@@ -27,7 +28,11 @@ export default function Contacts(props) {
                 <img src={github} alt="github" className="contact-icon" />
               </div>
               <div className="contact-title">
-                <a href="https://github.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/Salokhiddinov"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Github
                 </a>
               </div>
@@ -42,7 +47,11 @@ export default function Contacts(props) {
                 <img src={linkedin} alt="linkedin" className="contact-icon" />
               </div>
               <div className="contact-title">
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/nomonjon-salokhiddidnov-1a07261bb/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Linkedin
                 </a>
               </div>
@@ -68,7 +77,11 @@ export default function Contacts(props) {
             >
               <div className="contact-title">
                 <img src={telegram} alt="telegram" className="contact-icon" />
-                <a href="https://telegram.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://t.me/salakkhiddinov"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Telegram
                 </a>
               </div>
@@ -81,7 +94,11 @@ export default function Contacts(props) {
             >
               <div className="contact-title">
                 <img src={twitter} alt="twitter" className="contact-icon" />
-                <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://twitter.com/Salakkhiddinov"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Twitter
                 </a>
               </div>
@@ -95,11 +112,24 @@ export default function Contacts(props) {
               <div className="contact-title">
                 <img src={instagram} alt="instagram" className="contact-icon" />
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/salakhiddinov.n/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Instagram
+                </a>
+              </div>
+            </div>
+            <div
+              className="contact-item"
+              onClick={() => {
+                setActiveItem("phone");
+              }}
+            >
+              <div className="contact-title">
+                <img src={phone} alt="phone" className="contact-icon" />
+                <a href="tel:998794935" target="_blank" rel="noreferrer">
+                  Phone
                 </a>
               </div>
             </div>
@@ -118,7 +148,11 @@ export default function Contacts(props) {
             <p>
               This is my a reference to my Github Profile👾. Here you can find
               my repositories with projects😀{" "}
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Salokhiddinov"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Visit Github
               </a>
             </p>
@@ -128,8 +162,12 @@ export default function Contacts(props) {
           <div className="contact-description">
             <img src={linkedin} alt="linkedin" />
             <p>
-              Want to hire me? Feel free to visit my Linkedin page🤓!{" "}
-              <a href="https://linkein.com" target="_blank" rel="noreferrer">
+              Want to hire me? Feel free to visit my LinkedIn page🤓!{" "}
+              <a
+                href="https://www.linkedin.com/in/nomonjon-salokhiddidnov-1a07261bb/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Visit Linkedin
               </a>
             </p>
@@ -153,7 +191,11 @@ export default function Contacts(props) {
             <img src={telegram} alt="telegram" />
             <p>
               The fastest way to contact me is Telegram 🚀!{" "}
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://t.me/salakkhiddinov"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Open chat on Telegram
               </a>
             </p>
@@ -164,7 +206,11 @@ export default function Contacts(props) {
             <img src={twitter} alt="twitter" />
             <p>
               Twitter. Just Twitter. Join Please :){" "}
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://twitter.com/Salakkhiddinov"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Join Twitter
               </a>
             </p>
@@ -172,14 +218,28 @@ export default function Contacts(props) {
         )}
         {activeItem === "instagram" && (
           <div className="contact-description">
-            <img src={instagram} alt="instagram" />1
+            <img src={instagram} alt="instagram" />
             <p>
               All my updates and live photos/stories are placed on Instagram 📸.
               <br />
               Interested?{" "}
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/salakhiddinov.n/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Follow on Instagram
               </a>
+            </p>
+          </div>
+        )}
+        {activeItem === "phone" && (
+          <div className="contact-description">
+            <img src={instagram} alt="instagram" />
+            <p>
+              Here i leave my phone number: +998 99 879 49 35
+              <br />
+              Please, contact if there's anything important :){" "}
             </p>
           </div>
         )}

@@ -17,6 +17,7 @@ export default function Applications(props) {
   function openSkills() {
     props.openSkills();
   }
+
   return (
     <>
       <div className="applications">
@@ -36,6 +37,10 @@ export default function Applications(props) {
           <img src={skills} alt="skills" className="applicaion-icon" />
           <span className="application-title">Skills</span>
         </div>
+        {/* <div className="application-item" onClick={toggleFullscreen}>
+          <img src={screen} alt="screen" className="applicaion-icon" />
+          <span className="application-title">Fullscreen</span>
+        </div> */}
       </div>
     </>
   );
