@@ -2,6 +2,7 @@ import "../styles/Applications.css";
 import about from "../images/about.png";
 import contacts from "../images/contacts.png";
 import projects from "../images/projects.png";
+import skills from "../images/skills.png";
 
 export default function Applications(props) {
   function openAbout() {
@@ -12,6 +13,9 @@ export default function Applications(props) {
   }
   function openProjects() {
     props.openProjects();
+  }
+  function openSkills() {
+    props.openSkills();
   }
   return (
     <>
@@ -27,6 +31,10 @@ export default function Applications(props) {
         <div className="application-item" onClick={openProjects}>
           <img src={projects} alt="projects" className="applicaion-icon" />
           <span className="application-title">Projects</span>
+        </div>
+        <div className="application-item" onClick={openSkills}>
+          <img src={skills} alt="skills" className="applicaion-icon" />
+          <span className="application-title">Skills</span>
         </div>
       </div>
     </>

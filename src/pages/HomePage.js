@@ -6,12 +6,14 @@ import Applications from "../components/Applications";
 import About from "../components/About";
 import Contacts from "../components/Contacts";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 export default function HomePage() {
   const [navWinOpen, setNavWinOpen] = useState(false);
   const [about, setAbout] = useState(false);
   const [contacts, setContacts] = useState(false);
   const [projects, setProjects] = useState(false);
+  const [skills, setSkills] = useState(false);
 
   function closeAllWindows() {
     setAbout(false);
@@ -45,6 +47,14 @@ export default function HomePage() {
     closeAllWindows();
     setProjects(false);
   }
+  function openSkills() {
+    closeAllWindows();
+    setSkills(true);
+  }
+  function closeSkills() {
+    closeAllWindows();
+    setSkills(false);
+  }
   return (
     <div className="home-container">
       <Navigation toggleWin={toggleNavWin} />
@@ -56,10 +66,12 @@ export default function HomePage() {
       {projects && (
         <Projects toggle={openProjects} closeProjects={closeProjects} />
       )}
+      {skills && <Skills toggle={openSkills} closeSkills={closeSkills} />}
       <Applications
         openAbout={openAbout}
         openContacts={openContacts}
         openProjects={openProjects}
+        openSkills={openSkills}
       />
     </div>
   );

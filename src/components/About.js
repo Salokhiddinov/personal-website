@@ -15,7 +15,8 @@ export default function About(props) {
               <br />
               Salokhiddinov
             </h2>
-            <span className="photo-emoji">👾</span>
+            <p>Front-end developer && Graphic designer👾</p>
+            {/* <span className="photo-emoji">Front-end developer && Graphic designer👾</span> */}
           </div>
         </div>
         <p>

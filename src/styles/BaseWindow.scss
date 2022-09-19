@@ -13,6 +13,7 @@
   p {
     font-size: 1.9rem;
   }
+
   .window-header {
     display: flex;
     justify-content: space-between;
@@ -141,6 +142,55 @@
 }
 .contact-item:hover {
   background-color: #9696968c;
+}
+
+.skill-title {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  img {
+    height: 40px;
+    margin-right: 1rem;
+  }
+}
+.skill-active {
+  background-color: #b6b6b6;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+}
+.skills-picker {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.skills-list{
+    height: 40vh;
+}
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: #dfdfdf;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  span {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   .base-window {

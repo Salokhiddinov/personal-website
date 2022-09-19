@@ -172,7 +172,7 @@ export default function Contacts(props) {
         )}
         {activeItem === "instagram" && (
           <div className="contact-description">
-            <img src={instagram} alt="instagram" />
+            <img src={instagram} alt="instagram" />1
             <p>
               All my updates and live photos/stories are placed on Instagram 📸.
               <br />
