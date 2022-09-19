@@ -43,13 +43,13 @@
 }
 
 .navigation .start-button-wrapper ::-moz-selection {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
 }
 
 .navigation .start-button-wrapper ::selection {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
 }
 
 .navigation .start-button-wrapper .start-button {

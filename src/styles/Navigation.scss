@@ -32,8 +32,8 @@
       cursor: pointer;
     }
     ::selection {
-      background-color: #000;
-      color: #fff;
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(0, 0, 0);
     }
     .start-button {
       background-repeat: no-repeat;

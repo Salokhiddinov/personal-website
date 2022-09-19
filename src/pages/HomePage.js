@@ -19,6 +19,7 @@ export default function HomePage() {
     setAbout(false);
     setContacts(false);
     setProjects(false);
+    setSkills(false);
   }
   function toggleNavWin() {
     setNavWinOpen(!navWinOpen);
