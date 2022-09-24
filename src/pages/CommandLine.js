@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "../styles/CommandLine.css";
 
-export default function CommandLine() {
+export default function CommandLine(props) {
   const [load, setLoad] = useState(true);
   const [firstPara, setFirstPara] = useState(false);
   const [secondPara, setSecondPara] = useState(false);
@@ -20,7 +20,7 @@ export default function CommandLine() {
       setLoad(true);
       setFirstPara(false);
       setSecondPara(false);
-    }, 6000);
+    }, 5000);
   }, []);
 
   return (

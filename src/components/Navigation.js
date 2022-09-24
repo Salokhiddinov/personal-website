@@ -3,7 +3,6 @@ import startButton from "../images/start-button.png";
 import "../styles/Navigation.css";
 
 export default function Navigation(props) {
-  const [date, setDate] = useState("00");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
 
@@ -11,12 +10,9 @@ export default function Navigation(props) {
     const currentDate = new Date();
     const hours = currentDate.getHours();
     const minutes = currentDate.getMinutes();
-    const day = currentDate.getDay();
-    const month = currentDate.getMonth();
-    const year = currentDate.getFullYear();
+
     setHours(hours);
     setMinutes(minutes);
-    setDate(`${day}/${month}/${year}`);
   }, 1000);
 
   function toggleWindow() {
@@ -35,8 +31,7 @@ export default function Navigation(props) {
         <div>
           <div className="date-wrapper">
             <div className="date">
-              <span className="time">{date}</span>
-              <span className="time">{`${hours}:${
+              <span className="time bold">{`${hours}:${
                 minutes.toString().length === 1 ? "0" : ""
               }${minutes}`}</span>
             </div>

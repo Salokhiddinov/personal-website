@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.load-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url(../images/clouds.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load-screen .load-screen-logo {
+  display: flex;
+  justify-content: space-around;
+}
+.load-screen .load-screen-logo img {
+  height: 25vh;
+}
+.load-screen .main-text {
+  font-family: "Righteous", cursive;
+  font-size: 7rem;
+}
+.load-screen .progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+.load-screen .progress-bar .progress-bar-inner {
+  height: 100%;
+  background-color: #000;
+  -webkit-animation: loading 4s forwards;
+          animation: loading 4s forwards;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=LoadScreen.css.map */

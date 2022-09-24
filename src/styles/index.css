@@ -22,9 +22,9 @@ code {
 
 @keyframes slideIn {
   0% {
-    transform: translateX(-100%);
+    transform: translatey(50px);
   }
   100% {
-    transform: translateX(0);
+    transform: translate(0);
   }
 }
