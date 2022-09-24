@@ -1,5 +1,6 @@
 import { useState } from "react";
-// import "../styles/HomePage.modules.css";
+import "../styles/HomePage.css";
+// import CommandLine from "../components/CommandLine";
 import NavWindow from "../components/NavWindow";
 import Navigation from "../components/Navigation";
 import Applications from "../components/Applications";
@@ -14,7 +15,6 @@ export default function HomePage() {
   const [contacts, setContacts] = useState(false);
   const [projects, setProjects] = useState(false);
   const [skills, setSkills] = useState(false);
-
   function closeAllWindows() {
     setAbout(false);
     setContacts(false);
@@ -57,23 +57,26 @@ export default function HomePage() {
     setSkills(false);
   }
   return (
-    <div className="home-container">
-      <Navigation toggleWin={toggleNavWin} />
-      {navWinOpen && <NavWindow closeWin={toggleNavWin} />}
-      {about && <About closeAbout={closeAbout} />}
-      {contacts && (
-        <Contacts toggle={openContacts} closeContacts={closeContacts} />
-      )}
-      {projects && (
-        <Projects toggle={openProjects} closeProjects={closeProjects} />
-      )}
-      {skills && <Skills toggle={openSkills} closeSkills={closeSkills} />}
-      <Applications
-        openAbout={openAbout}
-        openContacts={openContacts}
-        openProjects={openProjects}
-        openSkills={openSkills}
-      />
-    </div>
+    <>
+      {/* {showCommandLine && <CommandLine />} */}
+      <div className="home-container">
+        <Navigation toggleWin={toggleNavWin} />
+        {navWinOpen && <NavWindow closeWin={toggleNavWin} />}
+        {about && <About closeAbout={closeAbout} />}
+        {contacts && (
+          <Contacts toggle={openContacts} closeContacts={closeContacts} />
+        )}
+        {projects && (
+          <Projects toggle={openProjects} closeProjects={closeProjects} />
+        )}
+        {skills && <Skills toggle={openSkills} closeSkills={closeSkills} />}
+        <Applications
+          openAbout={openAbout}
+          openContacts={openContacts}
+          openProjects={openProjects}
+          openSkills={openSkills}
+        />
+      </div>
+    </>
   );
 }

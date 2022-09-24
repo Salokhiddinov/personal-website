@@ -1,0 +1,61 @@
+.command-line-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.command-line-wrapper .command-line-text {
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  margin: 0;
+  padding: 2rem;
+}
+.command-line-wrapper .command-line-text P {
+  margin: 0;
+  padding: 0;
+}
+.command-line-wrapper .command-line-text p::-moz-selection {
+  background-color: transparent;
+  color: white;
+}
+.command-line-wrapper .command-line-text p::selection {
+  background-color: transparent;
+  color: white;
+}
+.command-line-wrapper .command-line-text .command-line-underscore {
+  font-size: 5rem;
+  -webkit-animation: blink 0.15s infinite linear;
+          animation: blink 0.15s infinite linear;
+}
+.command-line-wrapper .command-line-text .command-line-underscore::-moz-selection {
+  background: transparent;
+  color: white;
+}
+.command-line-wrapper .command-line-text .command-line-underscore::selection {
+  background: transparent;
+  color: white;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=CommandLine.css.map */

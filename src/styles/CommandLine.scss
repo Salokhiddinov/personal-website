@@ -1,0 +1,39 @@
+.command-line-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  .command-line-text {
+    color: white;
+    font-family: "VT323", monospace;
+    font-size: 3rem;
+    margin: 0;
+    padding: 2rem;
+    P {
+      margin: 0;
+      padding: 0;
+    }
+    p::selection {
+      background-color: transparent;
+      color: white;
+    }
+    .command-line-underscore {
+      font-size: 5rem;
+      animation: blink 0.15s infinite linear;
+    }
+    .command-line-underscore::selection {
+      background: transparent;
+      color: white;
+    }
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

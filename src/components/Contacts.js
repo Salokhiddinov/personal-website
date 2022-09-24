@@ -235,7 +235,7 @@ export default function Contacts(props) {
         )}
         {activeItem === "phone" && (
           <div className="contact-description">
-            <img src={instagram} alt="instagram" />
+            <img src={phone} alt="phone" />
             <p>
               Here i leave my phone number: +998 99 879 49 35
               <br />

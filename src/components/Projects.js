@@ -48,6 +48,13 @@ export default function Projects(props) {
               <span className="bold">theCollector</span> is the course project
               of an Internship. <br />
               Created with: ReactJS, NodeJS, MongoDB, Love and sweat😀
+              <a
+                href="https://itransition-cw.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit
+              </a>
             </p>
           </div>
         )}
