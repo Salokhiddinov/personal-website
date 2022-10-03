@@ -6,6 +6,9 @@ function App() {
   const [commandLine, setCommandLine] = useState(true);
   const [loader, setLoader] = useState(false);
   const [homePage, setHomePage] = useState(false);
+  localStorage.setItem("fullscreen", false);
+  console.log("fulscreen set to" + localStorage.getItem("fullscreen"));
+
   useEffect(() => {
     setTimeout(() => {
       setCommandLine(false);

@@ -3,6 +3,10 @@ import about from "../images/about.png";
 import contacts from "../images/contacts.png";
 import projects from "../images/projects.png";
 import skills from "../images/skills.png";
+import settings from "../images/settings.png";
+
+const element = document.getElementById("root");
+const fullscreen = localStorage.getItem("fullscreen");
 
 export default function Applications(props) {
   function openAbout() {
@@ -16,6 +20,27 @@ export default function Applications(props) {
   }
   function openSkills() {
     props.openSkills();
+  }
+  function goFullScreen() {
+    console.log(fullscreen, typeof fullscreen);
+
+    if (fullscreen === "false") {
+      element.requestFullscreen().then(() => {
+        localStorage.setItem("fullscreen", true);
+      });
+    }
+    if (fullscreen === "true") {
+      document.webkitExitFullscreen();
+      localStorage.setItem("fullscreen", false);
+    }
+
+    // if (localStorage.getItem("fullscreen") === false) {
+    //   });
+    //   console.log(localStorage.getItem("fullscreen"));
+    // } else if (localStorage.getItem("fullscreen") === true) {
+    //   document.webkitExitFullscreen();
+    //   localStorage.setItem("fullscreen", false);
+    // }
   }
 
   return (
@@ -37,10 +62,10 @@ export default function Applications(props) {
           <img src={skills} alt="skills" className="applicaion-icon" />
           <span className="application-title">Skills</span>
         </div>
-        {/* <div className="application-item" onClick={toggleFullscreen}>
-          <img src={screen} alt="screen" className="applicaion-icon" />
-          <span className="application-title">Fullscreen</span>
-        </div> */}
+        <div className="application-item" onClick={goFullScreen}>
+          <img src={settings} alt="settings" className="applicaion-icon" />
+          <span className="application-title">Settings</span>
+        </div>
       </div>
     </>
   );
